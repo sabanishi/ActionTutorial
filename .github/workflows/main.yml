@@ -1,0 +1,9 @@
+name: command
+on: [push]
+jobs:
+  command:
+    name: Use Linx commands
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Show ubuntu details
+        run: lsb_release -a
